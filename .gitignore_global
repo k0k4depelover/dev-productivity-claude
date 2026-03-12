@@ -1,0 +1,98 @@
+# ============================================================
+#  .gitignore_global — ignorados en TODOS los repos
+# ============================================================
+
+# ── Secretos / Credenciales ──────────────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+secrets/
+credentials/
+.aws/credentials
+
+# ── Python ───────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+.Python
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+mlruns/
+*.ipynb_checkpoints/
+
+# ── Node / TypeScript ────────────────────────────────────────
+node_modules/
+dist/
+.next/
+.nuxt/
+*.tsbuildinfo
+coverage/
+.nyc_output/
+
+# ── Java / Maven / Gradle ────────────────────────────────────
+target/
+*.class
+*.jar
+*.war
+*.ear
+.gradle/
+build/
+
+# ── IA / ML ───────────────────────────────────────────────────
+*.h5
+*.pkl
+*.pt
+*.pth
+*.ckpt
+*.onnx
+models/
+checkpoints/
+
+# ── Docker ───────────────────────────────────────────────────
+.docker/
+
+# ── VS Code ───────────────────────────────────────────────────
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# ── OS ───────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+
+# ── Logs ─────────────────────────────────────────────────────
+*.log
+logs/
+npm-debug.log*
+yarn-error.log*
+
+# ── Terraform ────────────────────────────────────────────────
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+
+# ── Seguridad / Pentest ──────────────────────────────────────
+*.wordlist
+loot/
+findings/
+reports/
+scans/

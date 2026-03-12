@@ -1,0 +1,80 @@
+[user]
+    name   = Tu Nombre
+    email  = tu@email.com
+    # signingkey = TU_CLAVE_GPG  # Descomentar si usas GPG
+
+[core]
+    editor      = code --wait
+    autocrlf    = true           # Windows: convierte LF ↔ CRLF
+    whitespace  = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+    excludesfile = ~/.gitignore_global
+
+[init]
+    defaultBranch = main
+
+[pull]
+    rebase = true
+
+[push]
+    default        = current
+    autoSetupRemote = true
+
+[rebase]
+    autoStash = true
+
+[merge]
+    tool = vscode
+    conflictstyle = diff3
+
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
+
+[diff]
+    tool       = vscode
+    colorMoved = default
+
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+
+[alias]
+    # Shortcuts
+    st  = status -sb
+    co  = checkout
+    cb  = checkout -b
+    br  = branch -vv
+    lg  = log --oneline --graph --decorate -20
+    lga = log --oneline --graph --decorate --all
+    undo = reset --soft HEAD~1
+    wip  = !git add -A && git commit -m "WIP"
+    unwip = reset --soft HEAD~1
+
+    # Productividad
+    aliases   = config --get-regexp alias
+    branches  = branch -a
+    tags      = tag -l
+    remotes   = remote -v
+    contributors = shortlog --summary --numbered --email
+    last      = log -1 HEAD --stat
+    whoami    = !git config user.name && git config user.email
+
+[color]
+    ui          = auto
+    branch      = auto
+    diff        = auto
+    interactive = auto
+    status      = auto
+
+[color "branch"]
+    current = yellow bold
+    local   = green
+    remote  = cyan
+
+[credential]
+    helper = manager    # Windows Credential Manager
+
+[http]
+    sslVerify = true
+
+# Reescritura de URLs (opcional: fuerza SSH sobre HTTPS para GitHub)
+# [url "git@github.com:"]
+#     insteadOf = https://github.com/

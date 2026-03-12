@@ -1,0 +1,37 @@
+# ============================================================
+#  ~/.aws/config — Perfiles AWS
+#  NUNCA guardes credenciales aquí. Usa IAM Roles o SSO.
+# ============================================================
+
+# ── Perfil por defecto ───────────────────────────────────────
+[default]
+region = us-east-1
+output = json
+cli_pager =
+
+# ── Perfil: Desarrollo ───────────────────────────────────────
+[profile dev]
+region = us-east-1
+output = table
+cli_pager =
+
+# ── Perfil: Producción (usa MFA) ────────────────────────────
+[profile prod]
+region = us-east-1
+output = json
+mfa_serial = arn:aws:iam::ACCOUNT_ID:mfa/tu-usuario
+# role_arn   = arn:aws:iam::ACCOUNT_ID:role/PowerUserAccess
+# source_profile = default
+
+# ── Perfil: SSO (recomendado) ────────────────────────────────
+# [profile sso-dev]
+# sso_start_url  = https://tu-org.awsapps.com/start
+# sso_account_id = 123456789012
+# sso_role_name  = DeveloperAccess
+# region         = us-east-1
+# output         = json
+
+# ── Configuración de retry ───────────────────────────────────
+[default]
+retry_mode = adaptive
+max_attempts = 10

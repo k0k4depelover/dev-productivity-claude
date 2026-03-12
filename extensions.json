@@ -1,0 +1,52 @@
+{
+  "recommendations": [
+    // ── Python ──────────────────────────────────────────────
+    "ms-python.python",
+    "ms-python.black-formatter",
+    "ms-python.isort",
+    "ms-toolsai.jupyter",
+
+    // ── TypeScript / Node ────────────────────────────────────
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "orta.vscode-jest",
+    "yoavbls.pretty-ts-errors",
+
+    // ── Java ─────────────────────────────────────────────────
+    "redhat.java",
+    "vscjava.vscode-maven",
+    "vscjava.vscode-spring-initializr",
+    "vmware.vscode-spring-boot",
+
+    // ── Cloud / Docker / Kubernetes ──────────────────────────
+    "ms-azuretools.vscode-docker",
+    "ms-kubernetes-tools.vscode-kubernetes-tools",
+    "amazonwebservices.aws-toolkit-vscode",
+    "hashicorp.terraform",
+
+    // ── IA / ML ───────────────────────────────────────────────
+    "github.copilot",
+    "github.copilot-chat",
+    "continue.continue",
+
+    // ── Seguridad ────────────────────────────────────────────
+    "snyk-security.snyk-vulnerability-scanner",
+    "trufflesecurity.trufflehog",
+    "peckj.TODO-highlight",
+
+    // ── Git ───────────────────────────────────────────────────
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+    "donjayamanne.githistory",
+
+    // ── Utilidades ───────────────────────────────────────────
+    "christian-kohler.path-intellisense",
+    "streetsidesoftware.code-spell-checker",
+    "pkief.material-icon-theme",
+    "zhuangtongfa.material-theme",
+    "humao.rest-client",
+    "ms-vscode.powershell",
+    "redhat.vscode-yaml",
+    "tamasfe.even-better-toml"
+  ]
+}
