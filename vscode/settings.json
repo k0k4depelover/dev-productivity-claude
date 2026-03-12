@@ -1,5 +1,4 @@
 {
-  // ── Editor ──────────────────────────────────────────────────
   "editor.fontSize": 14,
   "editor.fontFamily": "'JetBrains Mono', 'Cascadia Code', Consolas, monospace",
   "editor.fontLigatures": true,
@@ -20,13 +19,11 @@
   "editor.stickyScroll.enabled": true,
   "editor.inlayHints.enabled": "on",
 
-  // ── Terminal ─────────────────────────────────────────────────
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.fontFamily": "'JetBrains Mono', 'Cascadia Code NF'",
   "terminal.integrated.fontSize": 13,
   "terminal.integrated.cursorStyle": "line",
 
-  // ── Archivos ──────────────────────────────────────────────────
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
@@ -39,14 +36,12 @@
     "**/.DS_Store": true
   },
 
-  // ── Workbench ─────────────────────────────────────────────────
   "workbench.colorTheme": "One Dark Pro Darker",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.enablePreview": false,
   "workbench.startupEditor": "none",
   "workbench.tree.indent": 16,
 
-  // ── Python ───────────────────────────────────────────────────
   "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
   "python.formatting.provider": "black",
   "python.linting.enabled": true,
@@ -59,7 +54,6 @@
     "editor.formatOnSave": true
   },
 
-  // ── TypeScript / JavaScript ──────────────────────────────────
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -73,7 +67,6 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "eslint.validate": ["javascript", "typescript"],
 
-  // ── Java ─────────────────────────────────────────────────────
   "[java]": {
     "editor.defaultFormatter": "redhat.java",
     "editor.tabSize": 4
@@ -82,20 +75,17 @@
   "java.compile.nullAnalysis.mode": "automatic",
   "spring-boot.ls.java.home": "",
 
-  // ── Docker ───────────────────────────────────────────────────
   "docker.commands.build": "docker buildx build",
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
 
-  // ── Git ───────────────────────────────────────────────────────
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.currentLine.enabled": true,
 
-  // ── Seguridad ────────────────────────────────────────────────
   "security.workspace.trust.enabled": true,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
@@ -105,11 +95,6 @@
       }
     ]
   },
-
-  // ── Extensiones recomendadas (instalar con el extensions.json) ──
-  // Ver .vscode/extensions.json
-
-  // ── Misc ──────────────────────────────────────────────────────
   "breadcrumbs.enabled": true,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
